@@ -1,44 +1,19 @@
 List your first name and last inital here:
-<<<<<<< HEAD
+------------------------------------------
 Karthik V
-Phi T.
-<<<<<<< HEAD
+Phi T
 Colt C
-=======
 Michael M.
-=======
 Phi To.
 Tyler Albee
->>>>>>> 46b48ef8db2c91e51f37e79ad36963a330e22210
->>>>>>> 57d2eb151a0929f7645022408cf4e9d45dc52667
-------------------------------------------
-<<<<<<< HEAD
 Eric O
 Eric K.
-=======
 Dylan S
-<<<<<<< HEAD
-
-=======
 Drew C.
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/master
-=======
 XuSong H.
-<<<<<<< HEAD
 Cristian M
-=======
-<<<<<<< HEAD
 Thomas Y.
 Gustav S.
-=======
 Jacob T.
-<<<<<<< HEAD
 Yang Y.
-=======
 Michael Y
->>>>>>> 01907f59ef116f566ebd371fcfb69dc6ac9b73d0
->>>>>>> 19a1b6bca7a1b6037890c7f696ffeba6cea03714
->>>>>>> refs/remotes/origin/master
->>>>>>> ecf8dfc29e5e6f601e699e2a88206757dd6b6e7a
->>>>>>> 57d2eb151a0929f7645022408cf4e9d45dc52667
