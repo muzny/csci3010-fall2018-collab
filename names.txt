@@ -1,5 +1,11 @@
 List your first name and last inital here:
+<<<<<<< HEAD
 Phi T.
+Michael M.
+=======
+Phi To.
+Tyler Albee
+>>>>>>> 46b48ef8db2c91e51f37e79ad36963a330e22210
 ------------------------------------------
 <<<<<<< HEAD
 Eric O
@@ -14,6 +20,7 @@ Cristian M
 Thomas Y.
 =======
 Jacob T.
+Michael Y
 >>>>>>> 01907f59ef116f566ebd371fcfb69dc6ac9b73d0
 >>>>>>> refs/remotes/origin/master
 >>>>>>> ecf8dfc29e5e6f601e699e2a88206757dd6b6e7a
