@@ -2,3 +2,10 @@ List your first name and last inital here:
 Phi To.
 Tyler Albee
 ------------------------------------------
+<<<<<<< HEAD
+Eric O
+=======
+Dylan S
+Drew C.
+XuSong H.
+>>>>>>> refs/remotes/origin/master
