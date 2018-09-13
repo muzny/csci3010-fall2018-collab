@@ -1,7 +1,19 @@
 List your first name and last inital here:
 Phi T.
 ------------------------------------------
+<<<<<<< HEAD
+Eric O
+=======
 Dylan S
 Drew C.
 XuSong H.
+<<<<<<< HEAD
 Cristian M
+=======
+<<<<<<< HEAD
+Thomas Y.
+=======
+Jacob T.
+>>>>>>> 01907f59ef116f566ebd371fcfb69dc6ac9b73d0
+>>>>>>> refs/remotes/origin/master
+>>>>>>> ecf8dfc29e5e6f601e699e2a88206757dd6b6e7a
