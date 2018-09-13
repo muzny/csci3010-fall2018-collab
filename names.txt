@@ -2,10 +2,11 @@ List your first name and last inital here:
 Phi T.
 Michael M.
 ------------------------------------------
-
+<<<<<<< HEAD
 Eric O
+=======
 Dylan S
-Taicheng S
 Drew C.
-Becky M
 XuSong H.
+Jacob T.
+>>>>>>> refs/remotes/origin/master
