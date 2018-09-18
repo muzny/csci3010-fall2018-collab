@@ -20,4 +20,7 @@
 
 int NextLeapYear(int current_year);
 
+std::vector<int> multiples(int n, int m);
+
+
 #endif  // _FUNMATH_H_
