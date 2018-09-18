@@ -11,12 +11,11 @@
 // on what the function does, parameters, and return values
 // for example:
 /**
-    Adds two numbers together.
-    @param num1 The first number
-    @param num2 The second number
-    @return the sum of the two numbers
+    Returns nth value of fibobacci sequence.
+    @param n  represents nth index
+    @return value at n
 */
-// int Sum(int num1, int num2);
+int fibonacci(int n);
 
 
 #endif  // _FUNMATH_H_
