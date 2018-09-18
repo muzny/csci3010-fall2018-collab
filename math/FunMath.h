@@ -17,6 +17,9 @@
     @return the sum of the two numbers
 */
 // int Sum(int num1, int num2);
-   std::vector<int> multiples(int n, int m);
+
+std::string RemoveSubstring(std::string s1, std::string s2);
+
+std::vector<int> multiples(int n, int m);
 
 #endif  // _FUNMATH_H_
