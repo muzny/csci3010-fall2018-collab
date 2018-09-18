@@ -19,5 +19,13 @@ std::string RemoveSubstring(std::string s1, std::string s2){
     else{
         return "not found";
     }
-    
+}
+
+std::vector<int> multiples(int n, int m) {
+	std::vector<int> answer;
+	for(int i = 1; i <= m; i++) {
+		answer.push_back(n*i);
+	}
+
+	return answer;
 }
