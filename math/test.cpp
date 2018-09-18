@@ -2,6 +2,8 @@
 #include "catch.hpp"
 
 #include "FunMath.h" // include your header file here
+#include <vector>
+using namespace std;
 
 // Here is an example test case
 TEST_CASE("plus operator on ints", "[plus]") {
@@ -10,3 +12,7 @@ TEST_CASE("plus operator on ints", "[plus]") {
 
 // Add more test cases down here
 
+vector<int> v{1, 2, 3, 4};
+TEST_CASE("vector sum", "[vectorSum]") {
+	REQUIRE (vectorSum(v) == 10);
+}

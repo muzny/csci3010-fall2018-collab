@@ -17,6 +17,6 @@
     @return the sum of the two numbers
 */
 // int Sum(int num1, int num2);
-
+int vectorSum(std::vector<int>);
 
 #endif  // _FUNMATH_H_
