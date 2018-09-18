@@ -18,5 +18,6 @@
 */
 // int Sum(int num1, int num2);
 
+std::vector<int> VectorPlusN(std::vector<int> v, int n);
 
 #endif  // _FUNMATH_H_
