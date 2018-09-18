@@ -18,5 +18,6 @@
 */
 // int Sum(int num1, int num2);
 
+std::string RemoveSubstring(std::string s1, std::string s2);
 
 #endif  // _FUNMATH_H_
