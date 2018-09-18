@@ -18,5 +18,6 @@
 */
 // int Sum(int num1, int num2);
 
+vector<int> MathVectors(vector <int> a, vector <int> b);
 
 #endif  // _FUNMATH_H_
