@@ -18,6 +18,6 @@
 */
 // int Sum(int num1, int num2);
 
-vector<int> MathVectors(vector <int> a, vector <int> b);
+std::vector<int> MatchVectors(std::vector <int> a, std::vector <int> b);
 
 #endif  // _FUNMATH_H_
