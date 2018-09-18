@@ -17,6 +17,8 @@
     @return the sum of the two numbers
 */
 // int Sum(int num1, int num2);
+int NextLeapYear(int current_year);
 
+int Factorial(int n);
 
 #endif  // _FUNMATH_H_
