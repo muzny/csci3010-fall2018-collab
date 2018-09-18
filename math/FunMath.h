@@ -16,7 +16,7 @@
     @param num2 The second number
     @return the sum of the two numbers
 */
-// int Sum(int num1, int num2);
+int Sum(int num1, int num2);
 
 
 #endif  // _FUNMATH_H_
