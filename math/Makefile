@@ -1,6 +1,7 @@
 CXX = g++
 
-CXXFLAGS	= -std=c++11 -ggdb -Wall
+CXXFLAGS	= -std=c++11 -Wall
+CXXGDB = -ggdb
 CXXTESTFLAGS = --coverage
 
 all: test
