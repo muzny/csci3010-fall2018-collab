@@ -20,3 +20,6 @@
 
 
 #endif  // _FUNMATH_H_
+
+
+int removeTwos(int myInt);
