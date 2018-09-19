@@ -1,2 +1,5 @@
 language: cpp
 before_script: cd math
+script:
+  - make
+  - make test
