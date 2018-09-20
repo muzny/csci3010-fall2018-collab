@@ -12,9 +12,8 @@ TEST_CASE("plus operator on ints", "[plus]") {
 }
 
 // Add more test cases down here
-<<<<<<< HEAD
 
 TEST_CASE("vector sum", "[vectorSum]") {
-	REQUIRE (vectorSum({1, 2, 3, 4}) == 10);
+	REQUIRE (VectorSum({1, 2, 3, 4}) == 10);
 }
 

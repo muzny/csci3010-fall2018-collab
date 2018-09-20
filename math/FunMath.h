@@ -18,7 +18,7 @@
 */
 // int Sum(int num1, int num2);
 
-int vectorSum(std::vector<int>);
+int VectorSum(std::vector<int>);
 
 int NextLeapYear(int current_year);
 
