@@ -16,7 +16,14 @@
     @param num2 The second number
     @return the sum of the two numbers
 */
-std::vector<int> Vect_Mult(std::vector<int> vect, int n);
+/**
+    This function multpilies each element in a vector by N
+
+    @param vector of ints, N
+
+    @return vector ans, new vector with each element multiplied by N
+*/
+std::vector<int> VectMult(std::vector<int> vect, int n);
 
 int NextLeapYear(int current_year);
 

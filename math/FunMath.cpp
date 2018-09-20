@@ -1,9 +1,15 @@
 #include "FunMath.h"
-<<<<<<< HEAD
 #include <vector>
 
 
-std::vector<int> Vect_Mult(std::vector<int> vect, int n)
+/**
+    This function multpilies each element in a vector by N
+
+    @param vector of ints, N
+
+    @return vector ans, new vector with each element multiplied by N
+*/
+std::vector<int> VectMult(std::vector<int> vect, int n)
     {
     std::vector<int> ans;
     for (unsigned i=0;i<vect.size();i++)
