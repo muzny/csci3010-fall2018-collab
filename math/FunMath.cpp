@@ -1,4 +1,4 @@
-#include "FunMath.h"F
+#include "FunMath.h"
 using namespace std;
 
 /*
@@ -15,7 +15,7 @@ int removeTwos(int myInt){
         
     }
     return myInt;
-
+}
 
 /**
     This function calculates the next leap year. If the current year is a leap year,
