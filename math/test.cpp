@@ -8,10 +8,13 @@ using namespace std;
 // Here is an example test case
 TEST_CASE("plus operator on ints", "[plus]") {
     REQUIRE (1 + 1 == 2);
+    REQUIRE (3 + 1 == 4);
 }
 
 // Add more test cases down here
+<<<<<<< HEAD
 
 TEST_CASE("vector sum", "[vectorSum]") {
 	REQUIRE (vectorSum({1, 2, 3, 4}) == 10);
 }
+
