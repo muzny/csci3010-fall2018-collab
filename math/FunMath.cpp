@@ -1,5 +1,4 @@
 #include "FunMath.h"
-<<<<<<< HEAD
 #include <vector>
 using namespace std;
 
@@ -14,9 +13,9 @@ int VectorSum(vector<int> v) {
 		sum += v[i];
 	}
 	return sum;
-=======
+}
 
-/**
+/*
     This function calculates the next leap year. If the current year is a leap year,
     this function returns the current year.
     @param current_year the year after which to find the next leap year
