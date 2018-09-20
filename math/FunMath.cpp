@@ -26,20 +26,18 @@ int NextLeapYear(int current_year) {
 
     @param string s1 - The string to be removed from.
     @param string s2 - The string to remove from s1.
-    @return The resulting string.
+    @return string - IF FOUND: The result of removing s2 from s1
+                     NOT FOUND: s1 with nothing removed
 */
 
 std::string RemoveSubstring(std::string s1, std::string s2){
     int substring_start = -1;
     substring_start = s1.find(s2); //find the index where the substring first occurs
-    s1.erase(s1.begin() + substring_start, s1.begin() + substring_start + s2.length()); //erase the substring
-
     if(substring_start != -1){
-        return s1;
+      s1.erase(s1.begin() + substring_start, s1.begin() + substring_start + s2.length()); //erase the substring
     }
-    else{
-        return "not found";
-    }
+
+    return s1;
 }
 
 std::vector<int> multiples(int n, int m) {
