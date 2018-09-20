@@ -10,3 +10,7 @@ TEST_CASE("plus operator on ints", "[plus]") {
 
 // Add more test cases down here
 
+TEST_CASE("factorial on ints", "[factorial]") {
+    REQUIRE (Factorial(3) == 6);
+    REQUIRE (Factorial(2) == 2);
+}
