@@ -7,5 +7,4 @@ std::vector<int> multiples(int n, int m) {
 	}
 
 	return answer;
-
 }
