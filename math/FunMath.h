@@ -20,10 +20,8 @@
 
 int NextLeapYear(int current_year);
 
-std::vector<int> multiples(int n, int m);
+std::vector<int> Multiples(int n, int m);
 
 std::string RemoveSubstring(std::string s1, std::string s2);
-
-std::vector<int> multiples(int n, int m);
 
 #endif  // _FUNMATH_H_
