@@ -10,3 +10,10 @@ TEST_CASE("plus operator on ints", "[plus]") {
 }
 
 // Add more test cases down here
+std::vector<int> in = {1, 2, 3, 4, 5};
+std::vector<int> out = {3, 4, 5, 6, 7};
+std::vector<int> out2 = {5, 6, 7, 8, 9};
+TEST_CASE("each element of the vector plus N", "[VectorPlusN]") {
+    REQUIRE (VectorPlusN(in, 2) == out);
+    REQUIRE (VectorPlusN(in, 4) == out2);
+}

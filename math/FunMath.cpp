@@ -7,7 +7,7 @@ std::vector<int> VectorPlusN(std::vector<int> v, int n)
 	std::vector<int> v_plus_n;
 	for(int i = 0; i < v.size(); i++)
 	{
-		v_plus_n[i] = v[i] + n;
+		v_plus_n.push_back(v[i] + n);
 	}
 	return v_plus_n;
 }
