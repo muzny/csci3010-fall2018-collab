@@ -2,7 +2,10 @@
 #include <vector>
 using namespace std;
 
-// VectorSum takes a vector of integers and returns the sum of all the integers
+/* VectorSum takes a vector of integers and returns the sum of all the integers
+@parameter is vector of integers named v.
+ returns integer
+ */
 int VectorSum(vector<int> v) {
 	int size = v.size();
 	int sum = 0;
