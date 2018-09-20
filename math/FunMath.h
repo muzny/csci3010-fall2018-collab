@@ -4,11 +4,6 @@
 #include <vector>
 #include <string>
 
-/**
- * Josiah Graham
- * Faisal Lalani
- * Kyle Hilton
- */
 
 // CSCI 3010 - Fall 2018
 // declare your function definitions here
@@ -24,12 +19,7 @@
 */
 // int Sum(int num1, int num2);
 
-std::vector<int> EvenOddVectors(std::vector<int> even_odd_input) {
-	std::vector<int> even_odd_output;
-	for (int i = 0; i < even_odd_input.size(); i++) {
-		even_odd_output.vector::push_back(even_odd_input[i] %= 2);
-	}
-	return even_odd_output;
-}
+
+std::vector<int> EvenOddVectors(std::vector<int> even_odd_input);
 
 #endif  // _FUNMATH_H_
