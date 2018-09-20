@@ -10,3 +10,9 @@ TEST_CASE("plus operator on ints", "[plus]") {
 }
 
 // Add more test cases down here
+
+TEST_CASE("check sign of int", "[checksign]"){
+	REQUIRE (CheckSign(5)==1);
+	REQUIRE (CheckSign(-5)==-1);
+	REQUIRE (CheckSign(0)==0);
+}
