@@ -1,8 +1,19 @@
 #include "FunMath.h"
 
-<<<<<<< HEAD
-//Hey Liz and Tyler added a comment!
-=======
+/**Hey Liz and Tyler added a comment!
+this function takes an integer input and returns 1 if positive, -1 if negative
+**/
+
+int CheckSign(int input){
+	if (input > 0){
+		return 1;
+	} else if (input < 0){
+		return -1;
+	} else {
+		return 0;
+	}
+}
+
 /**
     This function calculates the next leap year. If the current year is a leap year,
     this function returns the current year.
@@ -51,4 +62,3 @@ std::vector<int> multiples(int n, int m) {
 
 	return answer;
 }
->>>>>>> master
