@@ -9,7 +9,7 @@
 // they should not be inside of a class
 // include a function comment in this file, making sure to comment
 // on what the function does, parameters, and return values
-// for example:
+// for example (put this in the .cpp file for this exercise):
 /**
     Adds two numbers together.
     @param num1 The first number
@@ -18,6 +18,13 @@
 */
 // int Sum(int num1, int num2);
 
+int NextLeapYear(int current_year);
+
+std::vector<int> multiples(int n, int m);
+
+std::string RemoveSubstring(std::string s1, std::string s2);
+
+std::vector<int> multiples(int n, int m);
 
 /**
     This function takes two vectors of integers, a and b. The fuction then removes elements from a if they are also in b.
