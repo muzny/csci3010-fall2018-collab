@@ -1,6 +1,4 @@
-#include "FunMath.h"
-
-<<<<<<< HEAD
+#include "FunMath.h"F
 using namespace std;
 
 /*
