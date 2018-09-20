@@ -9,4 +9,28 @@ TEST_CASE("plus operator on ints", "[plus]") {
     REQUIRE (3 + 1 == 4);
 }
 
+TEST_CASE("Calling removeTwos on various integers"){
+    int i = 0;
+    
+    SECTION("Evenly divisible by 2 should return 0"){
+        
+        i = 4;
+        i = removeTwos(i);
+        
+        REQUIRE(i == 1);
+        
+    }
+    SECTION("Not divisible by 2 should return LCD"){
+        
+        i = 30;
+        i = removeTwos(i);
+        
+        REQUIRE(i == 15);
+        
+    }
+
+
+
+}
+
 // Add more test cases down here
