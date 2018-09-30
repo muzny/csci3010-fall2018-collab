@@ -19,3 +19,9 @@ TEST_CASE("multiplying n up to m", "[multiples]") {
     REQUIRE(Multiples(3, 4) == integers);
 
 }
+
+TEST_CASE("check sign of int", "[checksign]"){
+	REQUIRE (CheckSign(5)==1);
+	REQUIRE (CheckSign(-5)==-1);
+	REQUIRE (CheckSign(0)==0);
+}
