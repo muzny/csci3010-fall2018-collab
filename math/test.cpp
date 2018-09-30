@@ -11,6 +11,15 @@ TEST_CASE("plus operator on ints", "[plus]") {
 
 // Add more test cases down here
 
+TEST_CASE("multiplying n up to m", "[multiples]") {
+    std::vector<int> integers = {2, 4, 6};
+    REQUIRE(Multiples(2, 3) == integers);
+
+    integers = {3, 6, 9, 12};
+    REQUIRE(Multiples(3, 4) == integers);
+
+}
+
 TEST_CASE("check sign of int", "[checksign]"){
 	REQUIRE (CheckSign(5)==1);
 	REQUIRE (CheckSign(-5)==-1);
