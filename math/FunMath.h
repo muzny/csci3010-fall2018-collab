@@ -27,4 +27,16 @@ std::vector<int> multiples(int n, int m);
 
 std::string RemoveSubstring(std::string s1, std::string s2);
 
+
+std::vector<int> multiples(int n, int m);
+
+/**
+    This function takes two vectors of integers, a and b. The fuction then removes elements from a if they are also in b.
+    If the integer is in b, but not in a, nothing happens. 
+        @param a: a vector of integers, the vector that is modified based on b
+        @param b: a vector of integers
+        @return: function returns vector a after it has elements removed.
+*/
+std::vector<int> MatchVectors(std::vector <int> a, std::vector <int> b);
+
 #endif  // _FUNMATH_H_
