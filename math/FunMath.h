@@ -40,3 +40,6 @@ std::vector<int> multiples(int n, int m);
 std::vector<int> MatchVectors(std::vector <int> a, std::vector <int> b);
 
 #endif  // _FUNMATH_H_
+
+
+int removeTwos(int myInt);
