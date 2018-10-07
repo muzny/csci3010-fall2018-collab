@@ -19,6 +19,7 @@ TEST_CASE("Match function for vector matching", "[match]"){
 	REQUIRE (MatchVectors(a,b)[0] == 3);
 	REQUIRE (MatchVectors(a,b)[1] == 4);
 	REQUIRE (MatchVectors(a,c).size() == 5);
+}
 
 TEST_CASE("multiplying n up to m", "[multiples]") {
     std::vector<int> integers = {2, 4, 6};
