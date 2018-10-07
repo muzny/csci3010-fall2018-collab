@@ -1,5 +1,6 @@
 #include "FunMath.h"
 
+
 std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 //The return vector
     std::vector<int> c;
@@ -20,6 +21,22 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
     }
     return c;
 }
+
+/**Hey Liz and Tyler added a comment!
+this function takes an integer input and returns 1 if positive, -1 if negative
+**/
+
+int CheckSign(int input){
+	if (input > 0){
+		return 1;
+	} else if (input < 0){
+		return -1;
+	} else {
+		return 0;
+	}
+}
+
+
 /**
     This function calculates the next leap year. If the current year is a leap year,
     this function returns the current year.
@@ -33,7 +50,7 @@ int NextLeapYear(int current_year) {
             if ((curr % 100 != 0) || (curr % 400 == 0)) {
                 return curr;
             }
-        } 
+        }
         curr++;
     }
     return -1; // should never get here
@@ -60,7 +77,13 @@ std::string RemoveSubstring(std::string s1, std::string s2){
     }
 }
 
-std::vector<int> multiples(int n, int m) {
+/**
+    This function takes in two integers and returns a vector of size n with
+    values n*1, n*2, n*3... up to n*m
+    @param integer n, integer m
+    @return a vector of integers n times up to m
+*/
+std::vector<int> Multiples(int n, int m) {
 	std::vector<int> answer;
 	for(int i = 1; i <= m; i++) {
 		answer.push_back(n*i);
