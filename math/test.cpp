@@ -32,6 +32,8 @@ TEST_CASE("Calling removeTwos on various integers"){
         i = removeTwos(i);
 
         REQUIRE(i == 15);
+    }
+}
 
 // Add more test cases down here
 
@@ -53,7 +55,6 @@ TEST_CASE("Even odd vectors computed", "[EvenOdd]") {
     REQUIRE (EvenOddVectors(even_odd_input2) == std::vector<int> {0,1,1});
     REQUIRE (EvenOddVectors(even_odd_input3) == std::vector<int> {0,1,0}); 
     REQUIRE (EvenOddVectors(even_odd_input4) == std::vector<int> {});
-    }
 }
 
 TEST_CASE("Match function for vector matching", "[match]"){
