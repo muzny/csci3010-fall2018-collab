@@ -27,8 +27,11 @@ int removeTwos(int myInt);
 
 int CheckSign(int input);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 std::vector<int> multiples(int n, int m);
+=======
+>>>>>>> 070ddc81e5b870db1d28aa3d4453142cefac09cd
 =======
 >>>>>>> 070ddc81e5b870db1d28aa3d4453142cefac09cd
 
