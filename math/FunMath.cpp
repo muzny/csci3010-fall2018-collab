@@ -1,5 +1,21 @@
 #include "FunMath.h"
+#include <vector>
 using namespace std;
+
+/**
+	Returns the sum of all integers in a vector.
+
+	@param v The vector of integers
+	@return The sum of the integers
+*/
+int VectorSum(vector<int> v) {
+	int size = v.size();
+	int sum = 0;
+	for (int i = 0; i < size; i++) {
+		sum += v[i];
+	}
+	return sum;
+}
 
 /*
 
@@ -12,12 +28,18 @@ This function divides an input integer by 2 until it is impossible to do so, the
 int removeTwos(int myInt){
     while (myInt%2 == 0) {
         myInt = myInt/2;
-        
+
     }
     return myInt;
 }
 
-
+/**
+    This function takes two vectors of integers, a and b. The fuction then removes elements from a if they are also in b.
+    If the integer is in b, but not in a, nothing happens.
+        @param a: a vector of integers, the vector that is modified based on b
+        @param b: a vector of integers
+        @return: function returns vector a after it has elements removed.
+*/
 std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 //The return vector
     std::vector<int> c;
@@ -31,7 +53,7 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
                 match = true;
             }
         }
-//If a match is not found, then we keep the element of a 
+//If a match is not found, then we keep the element of a
         if(match == false){
             c.push_back(a[i]);
         }
@@ -65,7 +87,7 @@ std::vector<int> VectorPlusN(std::vector<int> v, int n)
 	}
 	return v_plus_n;
 }
-/**
+/*
     This function calculates the next leap year. If the current year is a leap year,
     this function returns the current year.
     @param current_year the year after which to find the next leap year
@@ -111,6 +133,7 @@ std::string RemoveSubstring(std::string s1, std::string s2){
     @param integer n, integer m
     @return a vector of integers n times up to m
 */
+
 std::vector<int> Multiples(int n, int m) {
 	std::vector<int> answer;
 	for(int i = 1; i <= m; i++) {
@@ -118,7 +141,6 @@ std::vector<int> Multiples(int n, int m) {
 	}
 
 	return answer;
-
 }
 
 
