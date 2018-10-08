@@ -29,6 +29,8 @@ std::vector<int> VectMult(std::vector<int> vect, int n);
 
 //int Sum(int num1, int num2);
 
+std::vector<int> VectorPlusN(std::vector<int> v, int n);
+
 int VectorSum(std::vector<int> v);
 
 
@@ -47,5 +49,7 @@ int VectorProduct(std::vector<int> v);
 std::vector<int> EvenOddVectors(std::vector<int> even_odd_input);
 
 std::vector<int> MatchVectors(std::vector <int> a, std::vector <int> b);
+
+std::string StringGlues(std::vector<std::string> v);
 
 #endif  // _FUNMATH_H_

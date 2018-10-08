@@ -94,7 +94,21 @@ int CheckSign(int input){
 	}
 }
 
+/*
+    Adds an integer n to each element of a given vector
 
+    @param A vector of integers, An integer n to be added
+    @return A new vector with each integer incremented by n
+*/
+std::vector<int> VectorPlusN(std::vector<int> v, int n)
+{
+	std::vector<int> v_plus_n;
+	for(int i = 0; i < v.size(); i++)
+	{
+		v_plus_n.push_back(v[i] + n);
+	}
+	return v_plus_n;
+}
 /*
     This function calculates the next leap year. If the current year is a leap year,
     this function returns the current year.
@@ -171,4 +185,25 @@ std::vector<int> EvenOddVectors(std::vector<int> even_odd_input) {
                 even_odd_output.vector::push_back(even_odd_input[i] %= 2);
         }
         return even_odd_output;
+}
+/*
+  stringGlues: adds glue in between strings in a vector and concatanates it all 
+  Parameters: @vector <string> v 
+ */
+std::string StringGlues(std::vector<string> v) 
+{
+	std::string full=""; 
+	if(v.size()>0)
+	{
+		for(int i=0; i < v.size() - 1; i++)
+		{
+			full = full+v[i];
+			full= full+"glue";
+		}
+		return full + v.back(); 
+	}
+	else
+	{
+		return "";  
+	}
 }
