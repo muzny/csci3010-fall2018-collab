@@ -16,7 +16,7 @@
     @param num2 The second number
     @return the sum of the two numbers
 */
-int Sum(int num1, int num2);
+//int Sum(int num1, int num2);
 
 int NextLeapYear(int current_year);
 
@@ -37,6 +37,3 @@ int VectorProduct(std::vector<int> v);
 std::vector<int> MatchVectors(std::vector <int> a, std::vector <int> b);
 
 #endif  // _FUNMATH_H_
-
-
-int removeTwos(int myInt);
