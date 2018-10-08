@@ -76,7 +76,21 @@ int CheckSign(int input){
 	}
 }
 
+/*
+    Adds an integer n to each element of a given vector
 
+    @param A vector of integers, An integer n to be added
+    @return A new vector with each integer incremented by n
+*/
+std::vector<int> VectorPlusN(std::vector<int> v, int n)
+{
+	std::vector<int> v_plus_n;
+	for(int i = 0; i < v.size(); i++)
+	{
+		v_plus_n.push_back(v[i] + n);
+	}
+	return v_plus_n;
+}
 /*
     This function calculates the next leap year. If the current year is a leap year,
     this function returns the current year.
