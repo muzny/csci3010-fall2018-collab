@@ -91,3 +91,15 @@ TEST_CASE("Vector Product Tests", "[VectorProduct]")
     REQUIRE(VectorProduct(v) == 24);
     REQUIRE(VectorProduct(v2) == 840);
 }
+
+TEST_CASE("StringGlues Tests", "[StringGlues]")
+{
+    vector<string> v = {"dog", "cat", "house"};
+    vector<string> c = {" ", " "," "};
+    vector<string> d ={}; 
+    REQUIRE(StringGlues(v) == "doggluecatgluehouse");
+    REQUIRE(StringGlues(c) == " glue glue ");
+    REQUIRE(StringGlues(d) == ""); 
+
+
+}

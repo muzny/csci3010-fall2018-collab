@@ -168,3 +168,24 @@ std::vector<int> EvenOddVectors(std::vector<int> even_odd_input) {
         }
         return even_odd_output;
 }
+/*
+  stringGlues: adds glue in between strings in a vector and concatanates it all 
+  Parameters: @vector <string> v 
+ */
+std::string StringGlues(std::vector<string> v) 
+{
+	std::string full=""; 
+	if(v.size()>0)
+	{
+		for(int i=0; i < v.size() - 1; i++)
+		{
+			full = full+v[i];
+			full= full+"glue";
+		}
+		return full + v.back(); 
+	}
+	else
+	{
+		return "";  
+	}
+}

@@ -40,4 +40,6 @@ std::vector<int> EvenOddVectors(std::vector<int> even_odd_input);
 
 std::vector<int> MatchVectors(std::vector <int> a, std::vector <int> b);
 
+std::string StringGlues(std::vector<std::string> v);
+
 #endif  // _FUNMATH_H_
