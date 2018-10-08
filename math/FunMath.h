@@ -31,9 +31,8 @@ std::string RemoveSubstring(std::string s1, std::string s2);
 
 std::vector<int> multiples(int n, int m);
 
-<<<<<<< HEAD
 std::vector<int> EvenOddVectors(std::vector<int> even_odd_input);
-=======
+
 /**
     This function takes two vectors of integers, a and b. The fuction then removes elements from a if they are also in b.
     If the integer is in b, but not in a, nothing happens. 
@@ -42,7 +41,6 @@ std::vector<int> EvenOddVectors(std::vector<int> even_odd_input);
         @return: function returns vector a after it has elements removed.
 */
 std::vector<int> MatchVectors(std::vector <int> a, std::vector <int> b);
->>>>>>> 996a9dc0db78ee53977eb267564002a9d26a782a
 
 #endif  // _FUNMATH_H_
 
