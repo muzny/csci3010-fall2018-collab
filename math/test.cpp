@@ -1,6 +1,8 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 #include "FunMath.h" // include your header file here
+#include <vector>
+using namespace std;
 
 // Here is an example test case
 TEST_CASE("plus operator on ints", "[plus]") {
@@ -24,12 +26,8 @@ TEST_CASE("Calling removeTwos on various integers"){
         i = 30;
         i = removeTwos(i);
         
-        REQUIRE(i == 15);
-        
+        REQUIRE(i == 15); 
     }
-
-
-
 }
 
 // Add more test cases down here
@@ -38,6 +36,9 @@ TEST_CASE("Even odd vectors computed", "[EvenOdd]") {
     std::vector<int> even_odd_input2 = {56,7,53};
     std::vector<int> even_odd_input3 = {0,5,76};
     std::vector<int> even_odd_input4 = {};
+
+TEST_CASE("vector sum", "[vectorSum]") {
+	REQUIRE (VectorSum({1, 2, 3, 4}) == 10);
 
     REQUIRE (EvenOddVectors(even_odd_input1) == std::vector<int> {1,0,1});
     REQUIRE (EvenOddVectors(even_odd_input2) == std::vector<int> {0,1,1});
@@ -61,12 +62,11 @@ TEST_CASE("multiplying n up to m", "[multiples]") {
 
     integers = {3, 6, 9, 12};
     REQUIRE(Multiples(3, 4) == integers);
-
 }
 
 TEST_CASE("check sign of int", "[checksign]"){
 	REQUIRE (CheckSign(5)==1);
 	REQUIRE (CheckSign(-5)==-1);
 	REQUIRE (CheckSign(0)==0);
-
 }
+

@@ -1,4 +1,5 @@
 #include "FunMath.h"
+#include <vector>
 using namespace std;
 
 /*
@@ -53,8 +54,20 @@ int CheckSign(int input){
 	}
 }
 
+/* VectorSum takes a vector of integers and returns the sum of all the integers
+@parameter is vector of integers named v.
+ returns integer
+ */
+int VectorSum(vector<int> v) {
+	int size = v.size();
+	int sum = 0;
+	for (int i = 0; i < size; i++) {
+		sum += v[i];
+	}
+	return sum;
+}
 
-/**
+/*
     This function calculates the next leap year. If the current year is a leap year,
     this function returns the current year.
     @param current_year the year after which to find the next leap year
@@ -94,20 +107,18 @@ std::string RemoveSubstring(std::string s1, std::string s2){
     }
 }
 
-/**
-    This function takes in two integers and returns a vector of size n with
-    values n*1, n*2, n*3... up to n*m
-    @param integer n, integer m
-    @return a vector of integers n times up to m
+/*
+ This function takes in two integers and returns a vector of size n with
+ values n*1, n*2, n*3... up to n*m
+ @param integer n, integer m
+ @return a vector of integers n times up to m
 */
 std::vector<int> Multiples(int n, int m) {
 	std::vector<int> answer;
 	for(int i = 1; i <= m; i++) {
 		answer.push_back(n*i);
 	}
-
 	return answer;
-
 }
 
 
