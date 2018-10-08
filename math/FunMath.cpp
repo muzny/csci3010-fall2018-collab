@@ -123,15 +123,7 @@ std::string RemoveSubstring(std::string s1, std::string s2){
     @param integer n, integer m
     @return a vector of integers n times up to m
 */
-<<<<<<< HEAD
-<<<<<<< HEAD
 std::vector<int> multiples(int n, int m) {
-=======
-=======
->>>>>>> 070ddc81e5b870db1d28aa3d4453142cefac09cd
-
-std::vector<int> Multiples(int n, int m) {
->>>>>>> 070ddc81e5b870db1d28aa3d4453142cefac09cd
 	std::vector<int> answer;
 	for(int i = 1; i <= m; i++) {
 		answer.push_back(n*i);
