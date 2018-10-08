@@ -63,6 +63,8 @@ TEST_CASE("check sign of int", "[checksign]"){
 
 TEST_CASE("Vector Product Tests", "[VectorProduct]")
 {
-    std::vector<int> v = {1,2,3,4};
-    std::std::vector<int> v2 = {4,5,6,7};
+    std::vector<int> v {1,2,3,4};
+    std::vector<int> v2 {4,5,6,7};
+    REQUIRE(VectorProduct(v) == 24);
+    REQUIRE(VectorProduct(v2) == 840);
 }
