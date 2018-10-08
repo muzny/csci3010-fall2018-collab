@@ -20,15 +20,12 @@ int Sum(int num1, int num2);
 
 int NextLeapYear(int current_year);
 
-std::vector<int> Multiples(int n, int m);
-
 int CheckSign(int input);
 std::vector<int> multiples(int n, int m);
 
 std::string RemoveSubstring(std::string s1, std::string s2);
 
-
-std::vector<int> multiples(int n, int m);
+int VectorProduct(std::vector<int> v);
 
 /**
     This function takes two vectors of integers, a and b. The fuction then removes elements from a if they are also in b.

@@ -47,10 +47,10 @@ TEST_CASE("Match function for vector matching", "[match]"){
 
 TEST_CASE("multiplying n up to m", "[multiples]") {
     std::vector<int> integers = {2, 4, 6};
-    REQUIRE(Multiples(2, 3) == integers);
+    REQUIRE(multiples(2, 3) == integers);
 
     integers = {3, 6, 9, 12};
-    REQUIRE(Multiples(3, 4) == integers);
+    REQUIRE(multiples(3, 4) == integers);
 
 }
 
@@ -59,4 +59,10 @@ TEST_CASE("check sign of int", "[checksign]"){
 	REQUIRE (CheckSign(-5)==-1);
 	REQUIRE (CheckSign(0)==0);
 
+}
+
+TEST_CASE("Vector Product Tests", "[VectorProduct]")
+{
+    std::vector<int> v = {1,2,3,4};
+    std::std::vector<int> v2 = {4,5,6,7};
 }

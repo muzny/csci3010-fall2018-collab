@@ -101,8 +101,6 @@ std::string RemoveSubstring(std::string s1, std::string s2){
     @param integer n, integer m
     @return a vector of integers n times up to m
 */
-std::vector<int> Multiples(int n, int m) {
-
 
 std::vector<int> multiples(int n, int m) {
 	std::vector<int> answer;
@@ -112,4 +110,18 @@ std::vector<int> multiples(int n, int m) {
 
 	return answer;
 
+}
+
+/*
+    Calculates the product of every integer in a vector
+
+    @v vector that contains integers
+*/
+int VectorProduct(std::vector<int> v)
+{
+    int sum = 1;
+    for(int i = 0; i < v.size(); i++){
+        sum *= v[i];
+    }
+    return sum;
 }
