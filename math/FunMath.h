@@ -17,7 +17,7 @@
     @param num2 The second number
     @return the sum of the two numbers
 */
-// int Sum(int num1, int num2);
+//int Sum(int num1, int num2);
 
 std::vector<int> VectorPlusN(std::vector<int> v, int n);
 
@@ -26,16 +26,18 @@ int VectorSum(std::vector<int> v);
 
 int NextLeapYear(int current_year);
 
-std::vector<int> Multiples(int n, int m);
+int removeTwos(int myInt);
 
 int CheckSign(int input);
 
+std::vector<int> multiples(int n, int m);
+
 std::string RemoveSubstring(std::string s1, std::string s2);
+
+int VectorProduct(std::vector<int> v);
 
 std::vector<int> EvenOddVectors(std::vector<int> even_odd_input);
 
 std::vector<int> MatchVectors(std::vector <int> a, std::vector <int> b);
-
-int removeTwos(int myInt);
 
 #endif  // _FUNMATH_H_

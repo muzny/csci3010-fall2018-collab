@@ -1,5 +1,6 @@
 #include "FunMath.h"
 #include <vector>
+
 using namespace std;
 
 /**
@@ -133,8 +134,7 @@ std::string RemoveSubstring(std::string s1, std::string s2){
     @param integer n, integer m
     @return a vector of integers n times up to m
 */
-
-std::vector<int> Multiples(int n, int m) {
+std::vector<int> multiples(int n, int m) {
 	std::vector<int> answer;
 	for(int i = 1; i <= m; i++) {
 		answer.push_back(n*i);
@@ -143,6 +143,19 @@ std::vector<int> Multiples(int n, int m) {
 	return answer;
 }
 
+/*
+    Calculates the product of every integer in a vector
+
+    @v vector that contains integers
+*/
+int VectorProduct(std::vector<int> v)
+{
+    int sum = 1;
+    for(int i = 0; i < v.size(); i++){
+        sum *= v[i];
+    }
+    return sum;
+}
 
 //EvenOddVectors takes in a vector of integers and returns a vector of 0 for ev$
 std::vector<int> EvenOddVectors(std::vector<int> even_odd_input) {
@@ -152,4 +165,3 @@ std::vector<int> EvenOddVectors(std::vector<int> even_odd_input) {
         }
         return even_odd_output;
 }
-
