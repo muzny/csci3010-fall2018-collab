@@ -17,6 +17,10 @@
     @return the sum of the two numbers
 */
 // int Sum(int num1, int num2);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 44cc876642fe2e0eeff1fd910542ce66d686737b
 int vectorSum(std::vector<int>);
 
 int NextLeapYear(int current_year);

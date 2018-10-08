@@ -16,6 +16,10 @@ int VectorSum(vector<int> v) {
 	}
 	return sum;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 44cc876642fe2e0eeff1fd910542ce66d686737b
 /*
 
 This function divides an input integer by 2 until it is impossible to do so, then returns the final number.

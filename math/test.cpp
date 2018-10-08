@@ -36,8 +36,15 @@ TEST_CASE("Calling removeTwos on various integers"){
 
 // Add more test cases down here
 
+<<<<<<< HEAD
 TEST_CASE("vector sum", "[vectorSum]") {
 	REQUIRE (vectorSum({1, 2, 3, 4}) == 10);
+=======
+
+TEST_CASE("vector sum", "[vectorSum]") {
+	REQUIRE (vectorSum({1, 2, 3, 4}) == 10);
+}
+>>>>>>> 44cc876642fe2e0eeff1fd910542ce66d686737b
 
 TEST_CASE("Match function for vector matching", "[match]"){
 	std::vector<int> a = {1,2,3,4,5};
