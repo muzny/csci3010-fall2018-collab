@@ -1,4 +1,58 @@
 #include "FunMath.h"
+using namespace std;
+
+/*
+
+This function divides an input integer by 2 until it is impossible to do so, then returns the final number.
+@param myInt takes in integer to be changed
+@return int result of dividing by two until it cannot be done
+
+*/
+
+int removeTwos(int myInt){
+    while (myInt%2 == 0) {
+        myInt = myInt/2;
+        
+    }
+    return myInt;
+}
+
+
+std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
+//The return vector
+    std::vector<int> c;
+//match boolean is set to false at the beginning and is set to true if a match is found
+    bool match;
+//For loop essentially looks for matches that exist in both b and a
+    for(int i = 0; i < a.size(); i++){
+        match = false;
+        for(int j = 0; j < b.size(); j++){
+            if(a[i] == b[j]){
+                match = true;
+            }
+        }
+//If a match is not found, then we keep the element of a 
+        if(match == false){
+            c.push_back(a[i]);
+        }
+    }
+    return c;
+}
+
+/**Hey Liz and Tyler added a comment!
+this function takes an integer input and returns 1 if positive, -1 if negative
+**/
+
+int CheckSign(int input){
+	if (input > 0){
+		return 1;
+	} else if (input < 0){
+		return -1;
+	} else {
+		return 0;
+	}
+}
+
 
 //Kyle Schultz, Mitch Massey, Tyler Albee, Liz Parker
 
@@ -24,7 +78,7 @@ int NextLeapYear(int current_year) {
             if ((curr % 100 != 0) || (curr % 400 == 0)) {
                 return curr;
             }
-        } 
+        }
         curr++;
     }
     return -1; // should never get here
@@ -51,11 +105,29 @@ std::string RemoveSubstring(std::string s1, std::string s2){
     }
 }
 
-std::vector<int> multiples(int n, int m) {
+/**
+    This function takes in two integers and returns a vector of size n with
+    values n*1, n*2, n*3... up to n*m
+    @param integer n, integer m
+    @return a vector of integers n times up to m
+*/
+std::vector<int> Multiples(int n, int m) {
 	std::vector<int> answer;
 	for(int i = 1; i <= m; i++) {
 		answer.push_back(n*i);
 	}
 
 	return answer;
+
 }
+
+
+//EvenOddVectors takes in a vector of integers and returns a vector of 0 for ev$
+std::vector<int> EvenOddVectors(std::vector<int> even_odd_input) {
+        std::vector<int> even_odd_output;
+        for (int i = 0; i < even_odd_input.size(); i++) {
+                even_odd_output.vector::push_back(even_odd_input[i] %= 2);
+        }
+        return even_odd_output;
+}
+
