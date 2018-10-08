@@ -21,12 +21,30 @@
 
 int NextLeapYear(int current_year);
 
+std::vector<int> Multiples(int n, int m);
+
+int CheckSign(int input);
 std::vector<int> multiples(int n, int m);
 
 std::string RemoveSubstring(std::string s1, std::string s2);
 
+
 std::vector<int> multiples(int n, int m);
 
+<<<<<<< HEAD
 std::vector<int> EvenOddVectors(std::vector<int> even_odd_input);
+=======
+/**
+    This function takes two vectors of integers, a and b. The fuction then removes elements from a if they are also in b.
+    If the integer is in b, but not in a, nothing happens. 
+        @param a: a vector of integers, the vector that is modified based on b
+        @param b: a vector of integers
+        @return: function returns vector a after it has elements removed.
+*/
+std::vector<int> MatchVectors(std::vector <int> a, std::vector <int> b);
+>>>>>>> 996a9dc0db78ee53977eb267564002a9d26a782a
 
 #endif  // _FUNMATH_H_
+
+
+int removeTwos(int myInt);
