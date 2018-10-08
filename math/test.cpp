@@ -3,6 +3,7 @@
 #include "FunMath.h" // include your header file here
 #include <vector>
 
+
 std::vector<int> a (4,2);
 std::vector<int> b (4,4);
 // Add more test cases down here
@@ -11,38 +12,38 @@ TEST_CASE("Vectors are multpilied", "[vector]" )
 	REQUIRE( VectMult(a, 2) == b);
 }
 
+
 // Here is an example test case
 TEST_CASE("plus operator on ints", "[plus]") {
     REQUIRE (1 + 1 == 2);
     REQUIRE (3 + 1 == 4);
 }
 
-TEST_CASE("Calling removeTwos on various integers"){
-    int i = 0;
-    
-    SECTION("Evenly divisible by 2 should return 0"){
-        
-        i = 4;
-        i = removeTwos(i);
-        
-        REQUIRE(i == 1);
-        
-    }
-    SECTION("Not divisible by 2 should return LCD"){
-        
-        i = 30;
-        i = removeTwos(i);
-        
-        REQUIRE(i == 15);
-        
-    }
-
-
-
-}
-
 // Add more test cases down here
 
+TEST_CASE("vector sum", "[VectorSum]") {
+	REQUIRE (VectorSum({1, 2, 3, 4}) == 10);
+}
+
+TEST_CASE("Calling removeTwos on various integers"){
+    int i = 0;
+    SECTION("Evenly divisible by 2 should return 0"){
+
+        i = 4;
+        i = removeTwos(i);
+
+        REQUIRE(i == 1);
+
+    }
+    SECTION("Not divisible by 2 should return LCD"){
+
+        i = 30;
+        i = removeTwos(i);
+
+        REQUIRE(i == 15);
+
+    }
+}
 
 TEST_CASE("Match function for vector matching", "[match]"){
 	std::vector<int> a = {1,2,3,4,5};
@@ -56,10 +57,10 @@ TEST_CASE("Match function for vector matching", "[match]"){
 
 TEST_CASE("multiplying n up to m", "[multiples]") {
     std::vector<int> integers = {2, 4, 6};
-    REQUIRE(Multiples(2, 3) == integers);
+    REQUIRE(multiples(2, 3) == integers);
 
     integers = {3, 6, 9, 12};
-    REQUIRE(Multiples(3, 4) == integers);
+    REQUIRE(multiples(3, 4) == integers);
 
 }
 
@@ -68,5 +69,14 @@ TEST_CASE("check sign of int", "[checksign]"){
 	REQUIRE (CheckSign(-5)==-1);
 	REQUIRE (CheckSign(0)==0);
 
+}
+
+
+TEST_CASE("Vector Product Tests", "[VectorProduct]")
+{
+    std::vector<int> v {1,2,3,4};
+    std::vector<int> v2 {4,5,6,7};
+    REQUIRE(VectorProduct(v) == 24);
+    REQUIRE(VectorProduct(v2) == 840);
 }
 

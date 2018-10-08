@@ -2,6 +2,7 @@
 #include <vector>
 
 
+
 /**
     This function multpilies each element in a vector by N
 
@@ -20,6 +21,21 @@ std::vector<int> VectMult(std::vector<int> vect, int n)
         return ans;
     }
 
+/**
+	Returns the sum of all integers in a vector.
+
+	@param v The vector of integers
+	@return The sum of the integers
+*/
+int VectorSum(vector<int> v) {
+	int size = v.size();
+	int sum = 0;
+	for (int i = 0; i < size; i++) {
+		sum += v[i];
+	}
+	return sum;
+}
+
 /*
 
 This function divides an input integer by 2 until it is impossible to do so, then returns the final number.
@@ -31,12 +47,18 @@ This function divides an input integer by 2 until it is impossible to do so, the
 int removeTwos(int myInt){
     while (myInt%2 == 0) {
         myInt = myInt/2;
-        
+
     }
     return myInt;
 }
 
-
+/**
+    This function takes two vectors of integers, a and b. The fuction then removes elements from a if they are also in b.
+    If the integer is in b, but not in a, nothing happens.
+        @param a: a vector of integers, the vector that is modified based on b
+        @param b: a vector of integers
+        @return: function returns vector a after it has elements removed.
+*/
 std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 //The return vector
     std::vector<int> c;
@@ -50,7 +72,7 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
                 match = true;
             }
         }
-//If a match is not found, then we keep the element of a 
+//If a match is not found, then we keep the element of a
         if(match == false){
             c.push_back(a[i]);
         }
@@ -73,7 +95,7 @@ int CheckSign(int input){
 }
 
 
-/**
+/*
     This function calculates the next leap year. If the current year is a leap year,
     this function returns the current year.
     @param current_year the year after which to find the next leap year
@@ -119,12 +141,34 @@ std::string RemoveSubstring(std::string s1, std::string s2){
     @param integer n, integer m
     @return a vector of integers n times up to m
 */
-std::vector<int> Multiples(int n, int m) {
+std::vector<int> multiples(int n, int m) {
 	std::vector<int> answer;
 	for(int i = 1; i <= m; i++) {
 		answer.push_back(n*i);
 	}
 
 	return answer;
+}
 
+/*
+    Calculates the product of every integer in a vector
+
+    @v vector that contains integers
+*/
+int VectorProduct(std::vector<int> v)
+{
+    int sum = 1;
+    for(int i = 0; i < v.size(); i++){
+        sum *= v[i];
+    }
+    return sum;
+}
+
+//EvenOddVectors takes in a vector of integers and returns a vector of 0 for ev$
+std::vector<int> EvenOddVectors(std::vector<int> even_odd_input) {
+        std::vector<int> even_odd_output;
+        for (int i = 0; i < even_odd_input.size(); i++) {
+                even_odd_output.vector::push_back(even_odd_input[i] %= 2);
+        }
+        return even_odd_output;
 }
