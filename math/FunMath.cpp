@@ -53,9 +53,12 @@ int CheckSign(int input){
 	}
 }
 
+/*
+    Adds an integer n to each element of a given vector
 
-//Kyle Schultz, Mitch Massey, Tyler Albee, Liz Parker
-
+    @param A vector of integers, An integer n to be added
+    @return A new vector with each integer incremented by n
+*/
 std::vector<int> VectorPlusN(std::vector<int> v, int n)
 {
 	std::vector<int> v_plus_n;
