@@ -16,10 +16,9 @@ int VectorSum(vector<int> v) {
 	}
 	return sum;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 44cc876642fe2e0eeff1fd910542ce66d686737b
+
+
 /*
 
 This function divides an input integer by 2 until it is impossible to do so, then returns the final number.
@@ -119,7 +118,8 @@ std::string RemoveSubstring(std::string s1, std::string s2){
     @param integer n, integer m
     @return a vector of integers n times up to m
 */
-std::vector<int> multiples(int n, int m) {
+
+std::vector<int> Multiples(int n, int m) {
 	std::vector<int> answer;
 	for(int i = 1; i <= m; i++) {
 		answer.push_back(n*i);
