@@ -36,10 +36,8 @@ TEST_CASE("Calling removeTwos on various integers"){
 
 // Add more test cases down here
 
-<<<<<<< HEAD
 TEST_CASE("vector sum", "[vectorSum]") {
 	REQUIRE (vectorSum({1, 2, 3, 4}) == 10);
-=======
 
 TEST_CASE("Match function for vector matching", "[match]"){
 	std::vector<int> a = {1,2,3,4,5};
@@ -65,5 +63,4 @@ TEST_CASE("check sign of int", "[checksign]"){
 	REQUIRE (CheckSign(-5)==-1);
 	REQUIRE (CheckSign(0)==0);
 
->>>>>>> 2e508e8467fca8540e2e5361e296b28c646c9f08
 }

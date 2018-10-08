@@ -17,9 +17,7 @@
     @return the sum of the two numbers
 */
 // int Sum(int num1, int num2);
-<<<<<<< HEAD
 int vectorSum(std::vector<int>);
-=======
 
 int NextLeapYear(int current_year);
 
@@ -41,7 +39,6 @@ std::vector<int> multiples(int n, int m);
         @return: function returns vector a after it has elements removed.
 */
 std::vector<int> MatchVectors(std::vector <int> a, std::vector <int> b);
->>>>>>> 2e508e8467fca8540e2e5361e296b28c646c9f08
 
 #endif  // _FUNMATH_H_
 
