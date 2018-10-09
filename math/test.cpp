@@ -135,9 +135,9 @@ TEST_CASE("Vector Product Tests", "[VectorProduct]")
 
 TEST_CASE("StringGlues Tests", "[StringGlues]")
 {
-    vector<string> v = {"dog", "cat", "house"};
-    vector<string> c = {" ", " "," "};
-    vector<string> d ={}; 
+    std::vector<std::string> v = {"dog", "cat", "house"};
+    std::vector<std::string> c = {" ", " "," "};
+    std::vector<std::string> d = {}; 
     REQUIRE(StringGlues(v) == "doggluecatgluehouse");
     REQUIRE(StringGlues(c) == " glue glue ");
     REQUIRE(StringGlues(d) == ""); 
