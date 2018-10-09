@@ -111,6 +111,7 @@ std::vector<int> VectorPlusN(std::vector<int> v, int n)
     @param current_year the year after which to find the next leap year
     @return int the next leap year that is >= current year
 */
+
 int NextLeapYear(int current_year) {
     int curr = current_year;
     while (true) {
@@ -130,19 +131,18 @@ int NextLeapYear(int current_year) {
 
     @param string s1 - The string to be removed from.
     @param string s2 - The string to remove from s1.
-    @return The resulting string.
+    @return string - IF FOUND: The result of removing s2 from s1
+                     NOT FOUND: s1 with nothing removed
 */
+
 std::string RemoveSubstring(std::string s1, std::string s2){
     int substring_start = -1;
     substring_start = s1.find(s2); //find the index where the substring first occurs
-    s1.erase(s1.begin() + substring_start, s1.begin() + substring_start + s2.length()); //erase the substring
-
     if(substring_start != -1){
-        return s1;
+      s1.erase(s1.begin() + substring_start, s1.begin() + substring_start + s2.length()); //erase the substring
     }
-    else{
-        return "not found";
-    }
+
+    return s1;
 }
 
 /**

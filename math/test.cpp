@@ -18,6 +18,31 @@ TEST_CASE("plus operator on ints", "[plus]") {
 
 // Add more test cases down here
 
+TEST_CASE("Testing RemoveSubstring function", "[RemoveSubstring]") {
+
+  std::string str1 = "This is a test";
+  std::string str2 = "test";
+  std::string str3 = "this is not there";
+
+  SECTION( "remove substring 'test' from 'This is a test' " ){
+    
+    REQUIRE( RemoveSubstring(str1, str2) == "This is a " );
+
+  }
+
+  SECTION( "remove substring 'test' from 'this is not there' " ){
+    
+    REQUIRE( RemoveSubstring(str3, str1) == str3 );
+
+  }
+
+  SECTION( "remove substring 'this is not there' from 'This is a test' " ){
+    
+    REQUIRE( RemoveSubstring(str2, str3) == str2 );
+
+  }
+}
+
 TEST_CASE("vector sum", "[VectorSum]") {
 	REQUIRE (VectorSum({1, 2, 3, 4}) == 10);
 }
