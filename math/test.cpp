@@ -11,6 +11,7 @@ TEST_CASE("plus operator on ints", "[plus]") {
 
 // Add more test cases down here
 
+<<<<<<< HEAD
 TEST_CASE("Testing RemoveSubstring function", "[RemoveSubstring]") {
 
   std::string str1 = "This is a test";
@@ -34,4 +35,10 @@ TEST_CASE("Testing RemoveSubstring function", "[RemoveSubstring]") {
     REQUIRE( RemoveSubstring(str2, str3) == str2 );
 
   }
+=======
+TEST_CASE("check sign of int", "[checksign]"){
+	REQUIRE (CheckSign(5)==1);
+	REQUIRE (CheckSign(-5)==-1);
+	REQUIRE (CheckSign(0)==0);
+>>>>>>> master
 }
