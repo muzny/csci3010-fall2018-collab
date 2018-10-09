@@ -18,6 +18,20 @@ int VectorSum(vector<int> v) {
 	return sum;
 }
 
+/**
+ * This function takes an integer.
+ * And Returns a vector of all numbers less or equal than the passed in initeger squared. 
+ *Yang Yang and Yifan Li 
+ * */
+
+
+std::vector<int> squaredvector(int squared) {
+  std::vector<int> return_vector;
+  for (int i = 1 ; i <= squared ; i++ ) {
+    return_vector.push_back(i*i);
+  } 
+  return return_vector;
+}
 /*
 
 This function divides an input integer by 2 until it is impossible to do so, then returns the final number.
