@@ -27,7 +27,7 @@ std::vector<int> VectMult(std::vector<int> vect, int n)
 	@param v The vector of integers
 	@return The sum of the integers
 */
-int VectorSum(vector<int> v) {
+int VectorSum(std::vector<int> v) {
 	int size = v.size();
 	int sum = 0;
 	for (int i = 0; i < size; i++) {
