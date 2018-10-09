@@ -23,7 +23,7 @@ TEST_CASE("Testing RemoveSubstring function", "[RemoveSubstring]") {
 
   }
 
-  SECTION( "remove substring 'test' from 'This is not there' " ){
+  SECTION( "remove substring 'test' from 'this is not there' " ){
     
     REQUIRE( RemoveSubstring(str3, str1) == str3 );
 
