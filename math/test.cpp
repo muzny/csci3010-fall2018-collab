@@ -2,7 +2,16 @@
 #include "catch.hpp"
 #include "FunMath.h" // include your header file here
 #include <vector>
-using namespace std;
+
+
+std::vector<int> a (4,2);
+std::vector<int> b (4,4);
+// Add more test cases down here
+TEST_CASE("Vectors are multpilied", "[vector]" )
+{
+	REQUIRE( VectMult(a, 2) == b);
+}
+
 
 
 TEST_CASE("Returns vector of squared numbers","[squaredvectors]"){
@@ -115,6 +124,7 @@ TEST_CASE("check sign of int", "[checksign]"){
 
 }
 
+
 TEST_CASE("Vector Product Tests", "[VectorProduct]")
 {
     std::vector<int> v {1,2,3,4};
@@ -125,9 +135,9 @@ TEST_CASE("Vector Product Tests", "[VectorProduct]")
 
 TEST_CASE("StringGlues Tests", "[StringGlues]")
 {
-    vector<string> v = {"dog", "cat", "house"};
-    vector<string> c = {" ", " "," "};
-    vector<string> d ={}; 
+    std::vector<std::string> v = {"dog", "cat", "house"};
+    std::vector<std::string> c = {" ", " "," "};
+    std::vector<std::string> d = {}; 
     REQUIRE(StringGlues(v) == "doggluecatgluehouse");
     REQUIRE(StringGlues(c) == " glue glue ");
     REQUIRE(StringGlues(d) == ""); 

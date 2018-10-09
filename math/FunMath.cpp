@@ -1,7 +1,25 @@
 #include "FunMath.h"
 #include <vector>
 
-using namespace std;
+
+
+/**
+    This function multpilies each element in a vector by N
+
+    @param vector of ints, N
+
+    @return vector ans, new vector with each element multiplied by N
+*/
+std::vector<int> VectMult(std::vector<int> vect, int n)
+    {
+    std::vector<int> ans;
+    for (unsigned i=0;i<vect.size();i++)
+        {
+            int val=vect[i]*n;
+            ans.push_back(val);
+        }
+        return ans;
+    }
 
 /**
 	Returns the sum of all integers in a vector.
@@ -9,7 +27,7 @@ using namespace std;
 	@param v The vector of integers
 	@return The sum of the integers
 */
-int VectorSum(vector<int> v) {
+int VectorSum(std::vector<int> v) {
 	int size = v.size();
 	int sum = 0;
 	for (int i = 0; i < size; i++) {
@@ -61,9 +79,9 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b){
 //match boolean is set to false at the beginning and is set to true if a match is found
     bool match;
 //For loop essentially looks for matches that exist in both b and a
-    for(int i = 0; i < a.size(); i++){
+    for(unsigned int i = 0; i < a.size(); i++){
         match = false;
-        for(int j = 0; j < b.size(); j++){
+        for(unsigned int j = 0; j < b.size(); j++){
             if(a[i] == b[j]){
                 match = true;
             }
@@ -99,7 +117,7 @@ int CheckSign(int input){
 std::vector<int> VectorPlusN(std::vector<int> v, int n)
 {
 	std::vector<int> v_plus_n;
-	for(int i = 0; i < v.size(); i++)
+	for(unsigned int i = 0; i < v.size(); i++)
 	{
 		v_plus_n.push_back(v[i] + n);
 	}
@@ -168,7 +186,7 @@ std::vector<int> multiples(int n, int m) {
 int VectorProduct(std::vector<int> v)
 {
     int sum = 1;
-    for(int i = 0; i < v.size(); i++){
+    for(unsigned int i = 0; i < v.size(); i++){
         sum *= v[i];
     }
     return sum;
@@ -177,7 +195,7 @@ int VectorProduct(std::vector<int> v)
 //EvenOddVectors takes in a vector of integers and returns a vector of 0 for ev$
 std::vector<int> EvenOddVectors(std::vector<int> even_odd_input) {
         std::vector<int> even_odd_output;
-        for (int i = 0; i < even_odd_input.size(); i++) {
+        for (unsigned int i = 0; i < even_odd_input.size(); i++) {
                 even_odd_output.vector::push_back(even_odd_input[i] %= 2);
         }
         return even_odd_output;
@@ -186,12 +204,12 @@ std::vector<int> EvenOddVectors(std::vector<int> even_odd_input) {
   stringGlues: adds glue in between strings in a vector and concatanates it all 
   Parameters: @vector <string> v 
  */
-std::string StringGlues(std::vector<string> v) 
+std::string StringGlues(std::vector<std::string> v) 
 {
 	std::string full=""; 
 	if(v.size()>0)
 	{
-		for(int i=0; i < v.size() - 1; i++)
+		for(unsigned int i=0; i < v.size() - 1; i++)
 		{
 			full = full+v[i];
 			full= full+"glue";

@@ -17,6 +17,16 @@
     @param num2 The second number
     @return the sum of the two numbers
 */
+
+/**
+    This function multpilies each element in a vector by N
+
+    @param vector of ints, N
+
+    @return vector ans, new vector with each element multiplied by N
+*/
+std::vector<int> VectMult(std::vector<int> vect, int n);
+
 //int Sum(int num1, int num2);
 
 std::vector<int> VectorPlusN(std::vector<int> v, int n);
