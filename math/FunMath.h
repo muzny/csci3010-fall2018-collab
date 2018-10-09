@@ -32,7 +32,7 @@ std::vector<int> VectMult(std::vector<int> vect, int n);
 std::vector<int> VectorPlusN(std::vector<int> v, int n);
 
 int VectorSum(std::vector<int> v);
-
+std::vector<int>  squaredvector(int squared);
 
 int NextLeapYear(int current_year);
 
