@@ -190,7 +190,7 @@ std::vector<int> EvenOddVectors(std::vector<int> even_odd_input) {
   stringGlues: adds glue in between strings in a vector and concatanates it all 
   Parameters: @vector <string> v 
  */
-std::string StringGlues(std::vector<string> v) 
+std::string StringGlues(std::vector<std::string> v) 
 {
 	std::string full=""; 
 	if(v.size()>0)
