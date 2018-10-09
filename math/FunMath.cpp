@@ -1,6 +1,6 @@
 #include "FunMath.h"
 #include <vector>
-
+#include <iostream>
 using namespace std;
 
 /**
@@ -79,6 +79,23 @@ int CheckSign(int input){
 /*
     Adds an integer n to each element of a given vector
 
+
+
+/**
+ * This function takes an integer.
+ * And Returns a vector of all numbers less or equal than the passed in initeger squared. 
+ *
+ * */
+
+std::vector<int> squaredvector(int squared) {
+  std::vector<int> return_vector;
+  for (int i = 1 ; i <= squared ; i++ )
+    return_vector.push_back(i*i);
+  return return_vector;
+
+
+/**
+
     @param A vector of integers, An integer n to be added
     @return A new vector with each integer incremented by n
 */
@@ -92,6 +109,7 @@ std::vector<int> VectorPlusN(std::vector<int> v, int n)
 	return v_plus_n;
 }
 /*
+
     This function calculates the next leap year. If the current year is a leap year,
     this function returns the current year.
     @param current_year the year after which to find the next leap year

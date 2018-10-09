@@ -10,15 +10,34 @@ TEST_CASE("plus operator on ints", "[plus]") {
     REQUIRE (3 + 1 == 4);
 }
 
+
+TEST_CASE("Returns vector of squared numbers","[squaredvectors]"){
+    REQUIRE (squaredvector(5).size() == 5);
+    REQUIRE (squaredvector(5)[1] == 4);
+}
+
+
 // Add more test cases down here
 
 TEST_CASE("vector sum", "[VectorSum]") {
 	REQUIRE (VectorSum({1, 2, 3, 4}) == 10);
 }
 
+
 TEST_CASE("Calling removeTwos on various integers"){
     int i = 0;
     SECTION("Evenly divisible by 2 should return 0"){
+
+        i = 4;
+        i = removeTwos(i);
+        REQUIRE(i == 1);
+    }
+    SECTION("Not divisible by 2 should return LCD"){
+        i = 30;
+        i = removeTwos(i);
+        REQUIRE(i == 15);
+    }
+
 
         i = 4;
         i = removeTwos(i);
@@ -43,6 +62,7 @@ TEST_CASE("each element of the vector plus N", "[VectorPlusN]") {
     std::vector<int> out2 = {5, 6, 7, 8, 9};
     REQUIRE (VectorPlusN(in, 2) == out);
     REQUIRE (VectorPlusN(in, 4) == out2);
+
 }
 
 TEST_CASE("Even odd vectors computed", "[EvenOdd]") {
